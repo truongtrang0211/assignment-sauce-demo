@@ -1,0 +1,12 @@
+{
+  "validCustomer": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "postalCode": "12345"
+  },
+  "missingZipCustomer": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "postalCode": ""
+  }
+}
