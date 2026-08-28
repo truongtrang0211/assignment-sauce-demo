@@ -1,0 +1,26 @@
+{
+  "name": "saucedemo-playwright-bdd",
+  "version": "1.0.0",
+  "description": "E2E BDD Test Framework for SauceDemo with Playwright-BDD & TypeScript",
+  "scripts": {
+    "bddgen": "bddgen",
+    "test": "bddgen && playwright test",
+    "test:ui": "bddgen && playwright test --ui",
+    "test:headed": "bddgen && playwright test --headed",
+    "test:smoke": "bddgen --tags \"@smoke\" && playwright test",
+    "test:login": "bddgen --tags \"@login\" && playwright test",
+    "test:inventory": "bddgen --tags \"@inventory\" && playwright test",
+    "test:checkout": "bddgen --tags \"@checkout\" && playwright test",
+    "test:report": "playwright show-report",
+    "test:email": "ts-node src/utils/email-validator.spec.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^22.20.1",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.7",
+    "playwright-bdd": "^9.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "standardUser": {
+    "username": "standard_user",
+    "description": "Active standard user with full access"
+  },
+  "lockedOutUser": {
+    "username": "locked_out_user",
+    "description": "User account locked out by system"
+  },
+  "problemUser": {
+    "username": "problem_user",
+    "description": "User encountering image and UI glitch issues"
+  },
+  "performanceGlitchUser": {
+    "username": "performance_glitch_user",
+    "description": "User encountering performance latency"
+  }
+}
